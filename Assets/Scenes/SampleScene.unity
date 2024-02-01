@@ -470,7 +470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   display: {fileID: 548530855}
-  displayMode: 1
+  displayMode: 0
   sampleDuration: 2
 --- !u!114 &548530855
 MonoBehaviour:
@@ -928,8 +928,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointPrefab: {fileID: 5723593453808007227, guid: d994645d2ab03254c9535f8582e5aae5, type: 3}
-  resolution: 100
-  function: 0
+  resolution: 200
+  function: 5
   transitionMode: 1
   functionDuration: 1
   transitionDuration: 1

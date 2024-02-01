@@ -1,4 +1,5 @@
 
+
 using UnityEngine;
 using static UnityEngine.Mathf;
 
@@ -6,9 +7,9 @@ public static class FunctionLibrary {
 
     public delegate Vector3 Function(float u, float v, float t);
 
-    public enum FunctionName { Wave, MultiWave, Ripple, Sphere, Torus }
+    public enum FunctionName { Wave, MultiWave, Ripple, Sphere, Torus, Cylinder }
 
-    static Function[] functions = { Wave, MultiWave, Ripple, Sphere, Torus };
+    static Function[] functions = { Wave, MultiWave, Ripple, Sphere, Torus, Cylinder };
 
     public static Function GetFunction (FunctionName name) {
         return functions[(int)name];
@@ -77,6 +78,17 @@ public static class FunctionLibrary {
         p.x = s * Sin(PI * u);
         p.y = r2 * Sin(PI * v);
         p.z = s * Cos(PI * u);
+        return p;
+    }
+
+    public static Vector3 Cylinder (float u, float v, float t) {
+        Vector3 p;
+        float r = 0.9f + 0.1f * Sin(PI * (6f * u + 4f * v + t));
+
+        p.x = r * Cos(PI * v);
+        p.y = u;
+        p.z = r * Sin(PI * v);
+        
         return p;
     }
 }
