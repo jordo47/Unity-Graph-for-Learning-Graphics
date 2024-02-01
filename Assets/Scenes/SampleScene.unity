@@ -605,13 +605,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   computeShader: {fileID: 7200000, guid: d13aebe0fd5ca2947bae654059abbc57, type: 3}
-  material: {fileID: 2100000, guid: 9d22cba0fc6162544b0d524e1156a410, type: 2}
+  material: {fileID: -876546973899608171, guid: e3aae1be2165da843b6a29c7ea88fee2, type: 3}
   mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
   resolution: 1000
-  function: 0
+  function: 1
   transitionMode: 0
-  functionDuration: 60
-  transitionDuration: 60
+  functionDuration: 1
+  transitionDuration: 1
 --- !u!4 &570808465
 Transform:
   m_ObjectHideFlags: 0
